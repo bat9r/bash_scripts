@@ -4,16 +4,16 @@
 while getopts ":p:" opt; do
 	case $opt in
 	    p)
-			path=$OPTARG >&2
-			;;
-		\?)
-			echo "Invalid option $OPTARG" >&2
-			exit 1
-			;;
-		:)
-			echo "Option $OPTARG requires an rgument"
-			exit 1
-			;;
+		    path=$OPTARG >&2
+		    ;;
+        \?)
+		    echo "Invalid option $OPTARG" >&2
+		    exit 1
+		    ;;
+	    :)
+		    echo "Option $OPTARG requires an rgument"
+		    exit 1
+		    ;;
 	esac
 done
 
