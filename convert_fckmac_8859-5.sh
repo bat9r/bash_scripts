@@ -65,4 +65,3 @@ done
 new_file_in_hex=$( printf "x%s" "${new_list_of_file_hex[@]}" )
 new_file_in_hex=$( echo "$new_file_in_hex" | sed 's/x/\\x/g' )
 echo -e -n "$new_file_in_hex" > $path"dec"
-
